@@ -20,8 +20,8 @@ class database {
 	 * @var bool   $selectDb
 	 */
 	private $sunucu = 'localhost';
-	private $kullaniciAdi = 'root';
-	private $sifre = '';
+	private $kullaniciAdi = 'local';
+	private $sifre = '123456';
 	private $veritabaniAdi = 'gb_tweet';
 	private $connection;
 	private $selectDb;
