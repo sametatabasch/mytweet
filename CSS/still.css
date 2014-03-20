@@ -1,0 +1,602 @@
+/*
+
+*/
+body {
+	background-color: #709397;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+#genel {
+	width: 954px; /* -(3+3) padding*/
+	background: url("../Resimler/wash-white-30.png") repeat scroll 0 0 transparent;
+	border-radius: 3px;
+	margin: 0px auto;
+	padding: 3px;
+}
+
+a {
+	color: #FF3300;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF3300;
+	text-decoration: underline;
+}
+
+.gri {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#dedede');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#fdfdfd', endColorstr = '#dedede')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	background-image: -moz-linear-gradient(top, #fdfdfd, #dedede);
+	background-image: -ms-linear-gradient(top, #fdfdfd, #dedede);
+	background-image: -o-linear-gradient(top, #fdfdfd, #dedede);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#fdfdfd), to(#dedede));
+	background-image: -webkit-linear-gradient(top, #fdfdfd, #dedede);
+	background-image: linear-gradient(top, #fdfdfd, #dedede);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+}
+
+.mavi {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2db8eb', endColorstr='#019ad2');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2db8eb', endColorstr = '#019ad2')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	background-image: -moz-linear-gradient(top, #2db8eb, #019ad2);
+	background-image: -ms-linear-gradient(top, #2db8eb, #019ad2);
+	background-image: -o-linear-gradient(top, #2db8eb, #019ad2);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#2db8eb), to(#019ad2));
+	background-image: -webkit-linear-gradient(top, #2db8eb, #019ad2);
+	background-image: linear-gradient(top, #2db8eb, #019ad2);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+	background-color: #ffffff;
+	color: #fff;
+}
+
+.sol {
+	float: left;
+}
+
+.sag {
+	float: right;
+}
+
+.input {
+	margin: 3px;
+}
+
+#giris {
+	width: 350px;
+	padding: 3px;
+	margin: 3px;
+
+}
+
+#begenilenler {
+	width: 587px;
+	height: 285px;
+	margin-left: 3px;
+}
+
+.profil-mini {
+	margin-left: 3px;
+	padding: 3px;
+	position: relative;
+	width: 331px;
+}
+
+.tweet-box {
+	padding: 3px;
+}
+
+.profile-nav {
+	margin: 3px 0 0 3px;
+	padding: 0px;
+	position: static;
+	width: 337px;
+}
+
+.profil {
+	padding: 12px;
+	line-height: 16px;
+}
+
+#profil-link {
+	display: block;
+	position: relative;
+	min-height: 48px;
+	text-decoration: none;
+}
+
+#profil-link .content {
+	margin-left: 42px;
+}
+
+#profil-link .avatar {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#profil-link .fullname {
+	color: #333333;
+	display: block;
+	font-size: 14px;
+}
+
+#profil-link .fullname:hover {
+	color: #FF3300;
+	text-decoration: underline;
+}
+
+.stats {
+	border-bottom: 1px solid #E8E8E8;
+	border-top: 1px solid #E8E8E8;
+	overflow: hidden;
+}
+
+.stats-profil {
+	float: right;
+	width: 115px;
+}
+
+.stats li {
+	display: inline;
+}
+
+.stats a {
+	border-left: 1px solid #E8E8E8;
+	color: #999999;
+	float: left;
+	font-size: 10px;
+	line-height: 16px;
+	padding: 7px 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.stats a strong {
+	color: #333333;
+	display: block;
+	font-size: 14px;
+}
+
+.tweet-user {
+	padding: 10px 12px;
+}
+
+#profil-link .metadata {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #999;
+	font-size: 12px;
+	text-shadow: 0 2px 0 #ddd;
+}
+
+#durum-paylas-buton {
+	float: right;
+	position: static;
+	margin: 5px;
+	clear: both;
+	border: 1px solid #057ed0;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.durum {
+	position: relative;
+	padding: 3px 0;
+	position: relative;
+	border-bottom: 1px solid #dddddd;
+	background-color: #FFFFFF;
+	min-height: 50px;
+}
+
+#begenilenler .durum {
+	border-bottom: 1px solid #49B3FA;
+	background: none !important;
+	min-height: 50px;
+}
+
+.durum .content {
+	margin-left: 65px;
+	cursor: pointer;
+	padding: 3px;
+}
+
+#begenilenler .durum .time a {
+	color: #FFFFFF;
+}
+
+.durum .time {
+	color: #BBBBBB;
+	float: right;
+	margin-top: 1px;
+	position: relative;
+}
+
+.durum .puan {
+	color: #BBBBBB;
+	float: right;
+	margin-top: 5px;
+	position: relative;
+	font-size: 12px;
+}
+
+.durum .time a {
+	color: #999999;
+	font-size: 12px;
+}
+
+.durum .avatar {
+	left: 12px;
+	position: absolute;
+	top: 5px;
+	border-radius: 5px 5px 5px 5px;
+	height: 48px;
+	width: 48px;
+}
+
+#begenilenler .durum .fullname {
+	color: #fff;
+	text-shadow: 1px 0 1px #333;
+}
+
+.durum .fullname {
+	color: #333333;
+	font-weight: bold;
+}
+
+.durum p {
+	color: #333333;
+	margin: 3px 0;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.details {
+	color: #FF3300;
+	float: none;
+	font-size: 12px;
+	position: relative;
+	text-decoration: none;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	cursor: pointer;
+}
+
+.ok-sag {
+	background: url("../Resimler/ok-sag.png") no-repeat scroll 0 -1px transparent;
+	display: inline-block;
+	height: 13px;
+	position: absolute;
+	right: 12px;
+	vertical-align: text-top;
+	width: 9px;
+}
+
+.active .ok-sag {
+	background: url("../Resimler/ok-sag.png") no-repeat scroll 0 -21px transparent;
+	display: inline-block;
+	height: 13px;
+	position: absolute;
+	right: 12px;
+	vertical-align: text-top;
+	width: 9px;
+}
+
+.profile-nav ul {
+	border-radius: 3px;
+}
+
+.oval-ilk {
+	border-radius: 5px 5px 0px 0px;
+}
+
+.oval-son {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.profile-nav ul li {
+	padding: 5px 3px;
+}
+
+.profile-nav ul li:hover {
+	background-color: #ffffff;
+}
+
+.profile-nav ul li:hover .ok-sag {
+	background: url("../Resimler/ok-sag.png") no-repeat scroll 0 -21px transparent;
+	display: inline-block;
+	height: 13px;
+	position: absolute;
+	right: 12px;
+	vertical-align: text-top;
+	width: 9px;
+}
+
+.profile-nav ul li.active {
+	font-weight: bold;
+	background-color: #ffffff;
+	padding: 5px 3px;
+}
+
+.profile-nav ul li:hover .list-link {
+	color: #333333;
+	text-decoration: none;
+	position: relative;
+	display: block;
+}
+
+.list-link {
+	color: #FF3300;
+	text-decoration: none;
+	position: relative;
+	display: block;
+}
+
+.active .list-link {
+	background-color: #FFFFFF;
+	color: #333333;
+	text-decoration: none;
+	position: relative;
+	display: block;
+}
+
+.sagsutun {
+	margin: 3px 3px 3px 0px;
+	padding: 3px;
+	position: relative;
+	width: 599px;
+}
+
+.profile-card-inner {
+	float: left;
+	margin: 0 0 0 12px;
+	width: 50%;
+}
+
+.profile-card-inner .fullname {
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 2px;
+	font-weight: bold;
+	color: #333;
+}
+
+.profile-card-inner .location-and-url {
+	color: #777777;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.profile-card-actions {
+	float: right;
+	position: relative;
+}
+
+.profil-buyuk {
+	clear: both;
+	display: block;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 3px;
+	padding: 5px;
+}
+
+.profil-buyuk .bio {
+	color: #777777;
+	font: italic 13px/18px Georgia, "Times New Roman", serif;
+	word-wrap: break-word;
+}
+
+.profil-buyuk .avatar {
+	float: left;
+	width: 128px;
+	height: 128px;
+	border-radius: 5px;
+}
+
+#begenilenler h2 {
+	color: #FFFFFF;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 0 1px #333333;
+}
+
+h2 {
+	border-bottom: 1px solid #AAAAAA;
+	color: #333333;
+	margin: 0 3px 3px;
+	padding: 5px 5px 8px 10px;
+}
+
+#kayit {
+	width: 350px;
+	padding: 3px;
+	margin: 3px;
+}
+
+.btn-profil {
+	border: 1px solid #057ED0;
+	clear: both;
+	float: right;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 8px;
+	padding: 3px;
+	position: relative;
+	text-decoration: none;
+}
+
+.btn-profil-duzenle {
+	border: 1px solid #ddd;
+	clear: both;
+	float: right;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 8px;
+	padding: 3px;
+	position: relative;
+	text-decoration: none;
+	color: #555;
+}
+
+#giris_buton {
+	border: 1px solid #057ed0;
+	height: 30px;
+	width: 85px;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 0 0 3px;
+}
+
+#kayit_buton {
+	border: 1px solid #057ed0;
+	height: 30px;
+	width: 135px;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 0 0 3px;
+}
+
+.account {
+	border-bottom: 1px solid #DDDDDD;
+	padding: 5px;
+	position: relative;
+}
+
+.account .content {
+	margin: 0 0 0 55px;
+	min-height: 45px;
+}
+
+.account .content .avatar {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+#profild-form {
+	margin: 3px;
+	padding: 5px;
+	position: relative;
+}
+
+#profild-form label {
+	clear: both;
+	float: left;
+	position: static;
+	font-weight: bold;
+	font-size: 14px;
+	color: #353434;
+}
+
+#profild-form input {
+	clear: both;
+	float: left;
+	left: 30px;
+	margin: 10px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 1px 5px #AAAAAA;
+}
+
+#profild-form input:focus {
+	border-color: #56B4EF;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+	color: #333333;
+	outline: 0 none;
+}
+
+#profild-form span {
+	color: #555555;
+	float: left;
+	font-size: 11px;
+	left: 20px;
+	margin: 15px 5px 0;
+	position: relative;
+}
+
+#profild-form textarea {
+	clear: both;
+	float: left;
+	left: 30px;
+	margin: 10px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 1px 5px #AAAAAA;
+}
+
+#profild-form textarea:focus {
+	border-color: #56B4EF;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+	color: #333333;
+	outline: 0 none;
+}
+
+.arama {
+	margin: 3px 0 3px 3px;
+	padding: 3px;
+	position: relative;
+}
+
+.arama form {
+	margin: 5px auto;
+	width: 240px;
+}
+
+.arama form input {
+
+}
+
+.arama span {
+	color: #555555;
+	float: right;
+	font-size: 11px;
+	margin: 3px auto;
+	width: 115px;
+}
+
+.arama form button {
+	border: 1px solid #057ED0;
+	clear: both;
+	font-family: sans-serif;
+	font-weight: bold;
+	position: static;
+}
+
+#footer {
+	clear: both;
+}
